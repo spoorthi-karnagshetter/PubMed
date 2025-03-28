@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "test"
+version = "0.1.0"
+description = "Fetch research papers from PubMed based on user queries."
+authors = ["Your Name <your.email@example.com>"]
+
+license = "MIT"
+package-mode = false  # Add this line to disable package mode
+
+
+
+[tool.poetry.dependencies]
+python = "^3.12.6"
+requests = "^2.26.0"
+
+[tool.poetry.scripts]
+get-papers-list = "main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+license = "MIT"
+package-mode = false  # Add this line to disable package mode
